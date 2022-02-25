@@ -1,0 +1,48 @@
+﻿@using GSC.Feature.Navigation.Models
+@using GSC.Feature.Navigation.Repositories
+@model  List<NavigationItem>
+
+
+@if (Model == null)
+{
+
+    return;
+}
+<!-- Navigation -->
+
+<nav class="navigation visible-desktop">
+    <div class="container">
+
+        <div class="row">
+            <div class="span8">
+                <!-- Begin Menu Container -->
+                <div class="megamenu_container">
+                    <div class="menu-sidebar-container">
+                        <ul id="menu-sidebar" class="main-menu" data-count="@Model.Count">
+                            @foreach (NavigationItem primaruMenuItem in Model)
+                            {
+                                <li id="@primaruMenuItem.Item.ID.Guid.ToString("N")" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-6353">
+                                    <a href="@primaruMenuItem.Url">@primaruMenuItem.NavigationTitle</a>
+                                    @if (primaruMenuItem.ShowChildren)
+                                    {
+                                        var SubMenuItems = NavigationRepository.GetNavigationList(primaruMenuItem.Item);
+
+                                        <ul class="sub-menu">
+                                            @foreach (var subMenuItem in SubMenuItems)
+                                            {
+                                                <li id="@subMenuItem.Item.ID.Guid.ToString("N")" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1089"><a href="@subMenuItem.Url"> @subMenuItem.NavigationTitle</a></li>
+                                            }
+                                        </ul>
+
+                                    }
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- End class="navigation" -->

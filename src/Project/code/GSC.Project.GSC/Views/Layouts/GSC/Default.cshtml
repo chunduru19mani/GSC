@@ -1,1 +1,230 @@
-﻿
+﻿@using Sitecore.Mvc.Analytics.Extensions
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel='stylesheet' id='sb_instagram_styles-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=2.6.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='tribe-common-skeleton-style-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.15.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='tribe-tooltip-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.15.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-block-library-css' href='https://www.greenstreetcoffee.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-block-vendors-style-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=3.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-block-style-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=3.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='simple-share-buttons-adder-font-awesome-css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=5.8.3' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='mc4wp-form-themes-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.min.css?ver=4.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='laboutique-fonts-css' href='//fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='laboutique-fonts-script-css' href='//fonts.googleapis.com/css?family=Shadows+Into+Light' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css' href='https://www.greenstreetcoffee.com/wp-content/themes/laboutique/css/bootstrap.css?ver=1' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-responsive-css' href='https://www.greenstreetcoffee.com/wp-content/themes/laboutique/css/bootstrap-responsive.css?ver=1' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-lb-css' href='https://www.greenstreetcoffee.com/wp-content/themes/laboutique/css/fonts/font-awesome.css?ver=1' type='text/css' media='all' />
+    <link rel='stylesheet' id='flexslider-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/js_composer/assets/lib/bower/flexslider/flexslider.css?ver=4.7.4' type='text/css' media='screen' />
+    <link rel='stylesheet' id='style-css' href='https://www.greenstreetcoffee.com/wp-content/themes/laboutique/style.css?ver=1' type='text/css' media='all' />
+    <link rel='stylesheet' id='core-css' href='https://www.greenstreetcoffee.com/wp-content/themes/laboutique/css/color-schemes/turquoise.css?ver=1' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='https://www.greenstreetcoffee.com/wp-content/plugins/js_composer/assets/css/js_composer.css?ver=4.7.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='child-style-css' href='https://www.greenstreetcoffee.com/wp-content/themes/laboutique-child/style.css?ver=5.8.3' type='text/css' media='all' />
+    @Html.Sitecore().VisitorIdentification()
+</head>
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-5 theme-laboutique woocommerce-no-js tribe-no-js wpb-js-composer js-comp-ver-4.7.4 vc_responsive">
+    <div class="wrapper">
+        <div class="header_wrapper">
+            <!-- Header -->
+            <div class="header">
+                <!-- Top bar -->
+                <div class="top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span6 hidden-phone">
+                                <p>
+                                    FREE SHIPPING on coffee when you spend $50 or more! <a href="https://www.greenstreetcoffee.com/product-category/coffee/">SHOP NOW!</a>
+                                </p>
+                            </div>
+
+                            <div class="span6">
+                                <ul class="inline pull-right">
+
+
+
+                                    <li><a href="https://www.greenstreetcoffee.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fwww.greenstreetcoffee.com%2Fmy-account&amp;_wpnonce=2fe86f58dc" title="Login / Register">Login / Register</a></li>
+
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End class="top" -->
+                <!-- Logo & Search bar -->
+                <div class="bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span8">
+                                <div class="logo">
+                                    <a href="/" title="←Back home">
+                                        <img style="  " src="https://www.greenstreetcoffee.com/wp-content/uploads/2014/05/Picture-16.png" alt="Greenstreet" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="span4">
+                                <div class="row-fluid">
+
+                                    <div class=" span8 offset2">
+                                        <!-- Search -->
+                                        <div class="search">
+                                            <div class="qs_s">
+
+                                                <form method="get" action="https://www.greenstreetcoffee.com" role="search">
+                                                    <input type="text" name="s" id="query" placeholder="Search&hellip;" autocomplete="off" value="">
+                                                    <input type="submit" value="Search" id="searchsubmit">
+                                                    <input type="hidden" value="product" name="post_type">
+                                                </form>
+
+                                                <!-- Autocomplete results -->
+                                                <div id="autocomplete-results">
+
+                                                </div>
+                                                <!-- End id="autocomplete-results" -->
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- End class="search"-->
+                                    </div>
+
+
+
+                                    <div class="span2">
+                                        <!-- Mini cart -->
+                                        <div class="mini-cart">
+                                            <a href="https://www.greenstreetcoffee.com/cart" title="Cart">
+                                                <span>0</span>
+                                            </a>
+                                        </div>
+                                        <!-- End class="mini-cart" -->
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End class="bottom" -->
+
+
+            </div>
+            <!-- End class="header" -->
+
+            @Html.Sitecore().Placeholder("Navigation")
+           
+        </div>
+        <!-- Content section -->
+        <section class="main">
+            <section class="home">
+               
+                <h3>
+                  
+                    @Html.Sitecore().Field("Title", Sitecore.Context.Item)
+                </h3>
+                   
+            </section>
+        </section>
+        <!-- Content section -->
+        <!-- footer section -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="span3">
+                        <div id="text-8" class="footer_widget footer_widget_widget_text">
+                            <h6>Our Locations:</h6>			<div class="textwidget">
+                                <p>Greenstreet Coffee Co: 4533 Baltimore Ave, Philadelphia, PA 19143</p>
+                                <p>Greenstreet Coffee Roastery: 1919 Alter St, Philadelphia, PA 19146</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                    </div>
+                    <div class="span3">
+                        <div id="text-4" class="footer_widget footer_widget_widget_text">
+                            <h6>Newsletter Subscription</h6>			<div class="textwidget">
+                                <script>
+                                    (function () {
+                                        window.mc4wp = window.mc4wp || {
+                                            listeners: [],
+                                            forms: {
+                                                on: function (evt, cb) {
+                                                    window.mc4wp.listeners.push(
+                                                        {
+                                                            event: evt,
+                                                            callback: cb
+                                                        }
+                                                    );
+                                                }
+                                            }
+                                        }
+                                    })();
+                                </script><!-- Mailchimp for WordPress v4.8.1 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-4465 mc4wp-form-theme mc4wp-form-theme-green" method="post" data-id="4465" data-name="Default sign-up form">
+                                    <div class="mc4wp-form-fields">
+                                        <p>
+                                            Join 2,398 other coffee lovers and get exclusive offers and info in our monthly newsletter!
+                                        </p>
+
+                                        <p>
+                                            <label>Email address: </label>
+                                            <input type="email" id="mc4wp_email" name="EMAIL" placeholder="Your email address" required />
+                                        </p>
+
+                                        <p>
+                                            <input type="submit" value="Sign up" />
+                                        </p>
+                                    </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1645722582" /><input type="hidden" name="_mc4wp_form_id" value="4465" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div>
+                                </form><!-- / Mailchimp for WordPress Plugin -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div id="social_widget-2" class="footer_widget footer_widget_widget_social_widget">
+                            <h6>Socialize with us</h6>                                     <!-- Social icons -->
+                            <div class="social_icons">
+                                <h6></h6>
+                                <ul class="social_icons">
+                                    <li>
+                                        <a class="twitter" href="https://twitter.com/greenstcoffee" target="_blank" title="Twitter">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a class="facebook" href="https://www.facebook.com/greenstreetcoffee" target="_blank" title="Facebook">Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a class="tumblr" href="http://greenstreetcoffee.tumblr.com" target="_blank" title="Tumblr">Tumblr</a>
+                                    </li>
+                                    <li>
+                                        <a class="instagram" href="http://instagram.com/greenstreetcoffee" target="_blank" title="Instagram">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- footer section -->
+    </div>
+    <script type='text/javascript' src='https://www.greenstreetcoffee.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script src="~/Assets/Scripts/jquery.hoverIntent.minified.js"></script>
+    <script src="~/Assets/Scripts/tfingi-megamenu-frontend.js"></script>
+</body>
+</html>
